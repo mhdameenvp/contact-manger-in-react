@@ -3,7 +3,7 @@ import "./css/Headers.css"
 
 const Header = () => {
   return (
-    <div className="ui fixed menu">
+    <div className="uifixedmenu" >
       <div className="ui container">
         <h2 className="contact-manger">Contact Manager</h2>
       </div>

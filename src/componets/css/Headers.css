@@ -1,9 +1,39 @@
-.contact-manger{
-    margin-left: 300px;
-}
+
 
 @media screen and (max-width: 700px) {
     .contact-manger {
         margin-left: 40px; /* Adjust the margin for smaller screens */
     }
 }
+.uifixedmenu {
+    background-color: #000000; /* Set background color */
+    color: white; /* Set text color */
+    padding: 1rem 0; /* Add some padding */
+    text-align: center; /* Center align text */
+  }
+  
+  .contact-manager {
+    font-family: 'Arial', sans-serif; /* Choose a font */
+    font-size: 2rem; /* Set font size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    position: relative; /* Position relative for animation */
+    display: inline-block; /* Make inline-block to center */
+  }
+  
+  .contact-manager::before {
+    content: ''; /* Add empty content for pseudo-element */
+    position: absolute; /* Position absolute */
+    width: 100%; /* Full width */
+    height: 2px; /* Line height */
+    background-color: white; /* Color of the line */
+    bottom: 0; /* At the bottom */
+    left: 0; /* Align with the text */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease-in-out; /* Transition effect */
+  }
+  
+  .contact-manager:hover::before {
+    transform: scaleX(1); /* Show line on hover */
+  }
+  
